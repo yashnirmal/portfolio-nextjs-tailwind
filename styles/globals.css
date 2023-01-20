@@ -10,5 +10,10 @@
 
 @font-face{
   font-family: 'GILROY';
+  src: url('../public/assets/fonts/gilroy/Gilroy-Medium.ttf');
+}
+
+@font-face{
+  font-family :'GILROY-BOLD';
   src: url('../public/assets/fonts/gilroy/Gilroy-Bold.ttf');
 }

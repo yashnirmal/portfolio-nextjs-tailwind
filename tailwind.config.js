@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'gilroy':['GILROY']
+        'gilroy':['GILROY'],
+        'gilroy-bold':['GILROY-BOLD']
       }
     },
   },

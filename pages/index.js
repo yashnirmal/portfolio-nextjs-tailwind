@@ -4,9 +4,14 @@ import Two from '../components/smaller/two'
 import Three from '../components/smaller/three'
 import Four from '../components/smaller/four'
 import Five from '../components/smaller/five'
+import Carousel from "../components/carousel/carousel"
+import {useState} from "react"
 
 
 export default function Home() {
+
+  const [carousel,setCarousel] = useState(false)
+
   return (
     <>
       <Head>
@@ -16,14 +21,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="w-screen h-screen overflow-hidden bg-purple-500 flex items-center justify-center">
-        <div className="bg-gray-900 padding-2 max-w-[1400px] w-[80%] h-[90%] grid grid-cols-4 grid-rows-2 gap-[2px] p-8">
+      <main className="w-screen h-screen font-gilroy overflow-hidden bg-purple-500 flex items-center justify-center">
+        <div className="bg-zinc-900 padding-2 max-w-[1400px] w-[80%] h-[90%] grid grid-cols-4 grid-rows-2 gap-[2px] p-8">
           <One />
           <Two />
-          <Three />
+          <Three setCarousel={setCarousel} />
           <Four />
           <Five />
         </div>
+
+        {carousel && <Carousel setCarousel={setCarousel} />}
       </main>
     </>
   )
