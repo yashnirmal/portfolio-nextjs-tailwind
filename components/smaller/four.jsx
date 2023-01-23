@@ -5,18 +5,18 @@ export default function Four(){
 				<div className="flex-1 flex items-center">
 					<span className="bg-zinc-900 w-4 h-4 rounded-full"></span>
 				</div>
-				<div className="flex-1 flex items-center cursor-pointer">Recent Projects</div>
+				<a href="https://github.com/yashnirmal/space-shooter" target="_blank" className="flex-1 flex items-center cursor-pointer">Recent Project</a>
 			</div>
 			<div className="flex bg-teal-600 cont p-4 rotate-12 shadow-lg shadow-black">
 				<div className="flex-1 flex items-center ">
 					<span className="bg-zinc-900 w-4 h-4 rounded-full"></span>
 				</div>
-				<div className="flex-1 flex items-center">Recent Projects</div>
+				<a href="https://twitter.com/YashNirmal42" target="_blank" className="flex-1 flex items-center">Recent Posts</a>
 			</div>
 
-			<div className="flex p-4 row-start-4 text-2xl font-light text-white cursor-pointer">
+			<a href="https://linktr.ee/yash_nirmal" target="_blank" className="flex p-4 row-start-4 text-2xl font-light text-white cursor-pointer">
 				SEE MORE
-			</div>
+			</a>
 		</div>
 	)
 }

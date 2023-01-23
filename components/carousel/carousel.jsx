@@ -1,12 +1,22 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import Contact from "./contact";
 import About from "./about";
 import Projects from "./projects"
-import Skills from "./skills"
+import Skills from "./skills";
+import Resume from "../resume";
 
-export default function Carousel({setCarousel}){
+export default function Carousel({slideNum,setCarousel}){
 
 	const [curr,setCurr] = useState(1)
+
+	useEffect(()=>{
+		console.log(slideNum)
+		// const currSlide = document.querySelector(`[data-index="${curr}"]`)
+		// currSlide.dataset.status="inactive"
+		// const nextSlide = document.querySelector(`[data-index="${slideNum}"]`)
+		// nextSlide.dataset.status="active"
+		// setCurr(parseInt(slideNum))
+	},[])
 
 	function moveToPrev(){
 		let nextIndex = curr-1
@@ -43,18 +53,19 @@ export default function Carousel({setCarousel}){
 	}
 
 	return (
-		<div className="bg-zinc-900 opacity-95 w-screen h-screen absolute top-0 right-0 m-auto flex flex-col">
-			<div className="border-4 w-full h-28 flex justify-center gap-20 relative text-white">
+		<div className="bg-zinc-900 bg-opacity-95 w-screen h-screen absolute top-0 right-0 m-auto flex flex-col">
+			<div className="w-full h-28 flex justify-center gap-20 relative text-white">
 		        <button className="cursor-pointer" data-slide="1" onClick={btnClicked} >About</button>
 		        <button className="cursor-pointer" data-slide="2" onClick={btnClicked}>Projects</button>
 		        <button className="cursor-pointer" data-slide="3" onClick={btnClicked}>Skills</button>
 		        <button className="cursor-pointer" data-slide="4" onClick={btnClicked}>Contact</button>
 		    	<button className="absolute top-1/2 right-20 -translate-y-1/2 font-bold text-2xl z-100 hover:bg-red-500 rounded-full py-4 px-6 transition duration-200"  onClick={()=>setCarousel(false)}>X</button>
+		    	{/*<Resume className="h-fit" />*/}
 		    </div>
 
 			<div id="default-carousel" className="flex-grow relative" data-carousel="static">
 			    {/* Carousel wrapper */}
-			    <div className="w-full h-full border-4 overflow-hidden opacity-100 rounded-lg">
+			    <div className="w-full h-full overflow-hidden opacity-100 rounded-lg">
 			        <div className="w-full h-full scale-90 bg-blue-200 overflow-hidden cont data-[status=inactive]:hidden data-[status=active]:block" data-index="1" data-status="active">
 			        	<About />
 			        </div>

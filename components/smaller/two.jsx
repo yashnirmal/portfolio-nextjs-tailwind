@@ -1,10 +1,13 @@
-import rocket from '../../public/assets/rocket.gif'
+import Image from 'next/image';
+import Resume from "../resume"
 
 export default function Two(){
 	return (
-		<div className="bg-pink-200 cont flex items-center justify-center">
-			<img src={rocket} alt="" />
-			Resume
+		<div className="bg-red-300 cont p-4 flex flex-col relative items-center justify-center">
+			<div className="flex-1 w-full relative">
+				<Image src="/assets/rocket.gif" alt="rocket" fill className="object-center" />
+			</div>
+			<Resume />
 		</div>
 	)
 }

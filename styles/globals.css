@@ -6,6 +6,10 @@
   .cont{
     @apply rounded-xl
   }
+
+  .highlight{
+    @apply text-purple-800 underline
+  }
 }
 
 @font-face{
@@ -16,4 +20,10 @@
 @font-face{
   font-family :'GILROY-BOLD';
   src: url('../public/assets/fonts/gilroy/Gilroy-Bold.ttf');
+}
+
+@layer components{
+  .tag{
+    @apply border border-black px-2 py-1 rounded-full w-fit
+  }
 }
