@@ -1,6 +1,6 @@
 export default function Four(){
 	return (
-		<div className="grid grid-rows-4 gap-[2px]">
+		<div className="grid grid-rows-4 min-h-[400px] gap-[2px]">
 			<div className="flex bg-yellow-400 cont p-4  shadow-lg shadow-black">
 				<div className="flex-1 flex items-center">
 					<span className="bg-zinc-900 w-4 h-4 rounded-full"></span>

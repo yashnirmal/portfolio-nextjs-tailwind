@@ -22,8 +22,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       
-      <main className="w-screen h-screen font-gilroy overflow-hidden bg-zinc-900 flex items-center justify-center">
-        <div className="bg-zinc-900 padding-2 max-w-[1400px] w-[80%] h-[90%] grid grid-cols-4 grid-rows-2 gap-[2px] p-8">
+      <main className="w-screen min-h-screen h-fit font-gilroy overflow-hidden bg-zinc-900 flex items-center justify-center">
+        <div className="bg-zinc-900 max-w-[1400px] md:w-[80%] md:h-[90%] w-[95%] grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[2px] p-2">
           <One />
           <Two />
           <Three setSlideNum={setSlideNum} setCarousel={setCarousel} />

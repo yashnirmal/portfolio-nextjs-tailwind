@@ -1,9 +1,9 @@
 import Image from 'next/image'
 export default function Five(){
 	return (
-		<a href="https://github.com/yashnirmal" target="_blank" className="bg-white cont bg-gradient-to-br p-4 from-gray-600 to-gray-800 flex flex-col text-white cont">
+		<a href="https://github.com/yashnirmal" target="_blank" className="bg-white cont min-h-[400px] bg-gradient-to-br p-4 from-gray-600 to-gray-800 flex flex-col text-white cont">
 			<div className="flex-1 flex justify-center items-center">
-				<div className="h-full p-4 aspect-square relative">
+				<div className="lg:w-3/5 md:w-3/4 sm:w-[60%] w-[70%] p-4 aspect-square relative">
 					<Image src="/assets/github.png" alt="github" layout="fill"  />
 				</div>
 			</div>
