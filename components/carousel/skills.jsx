@@ -1,10 +1,10 @@
 export default function Skills(){
 	return (
-		<div className="bg-blue-200 w-full h-full flex p-6">
+		<div className="bg-blue-200 w-full h-full grid lg:grid-cols-3 md:grid-cols-2 items-center p-6">
 			{/*Skills*/}
 			{/*Frontend*/}
-			<div className="flex-1 flex items-center justify-center">
-				<div>
+			<div className="w-full flex-1 flex md:items-center items-start justify-center sm:mb-0 mb-6">
+				<div className="w-full">
 					<h1 className="text-3xl font-bold underline">Frontend Development</h1>
 					<ul className="text-2xl">
 						<li>NextJS</li>
@@ -17,8 +17,8 @@ export default function Skills(){
 				</div>
 			</div>
 			{/*Backend*/}
-			<div className="flex-1 flex items-center justify-center">
-				<div>
+			<div className="w-full flex-1 flex md:items-center items-start  justify-center sm:mb-0 mb-6">
+				<div className="w-full">
 					<h1 className="text-3xl font-bold underline">Backend Development</h1>
 					<ul className="text-2xl">
 						<li>NodeJS</li>
@@ -30,9 +30,9 @@ export default function Skills(){
 				</div>
 			</div>
 			
-			<div className="flex-1 flex flex-col items-center justify-center gap-14 mr-10">
+			<div className="w-full grid lg:grid-cols-none md:grid-cols-2 lg:grid-rows-2 lg:col-span-1 md:col-span-2 lg:flex-col md:flex-row items-center justify-center lg:gap-14 gap-0 lg:mr-10 mr-0">
 				{/*Education*/}
-				<div>
+				<div className="sm:mb-0 mb-6">
 					<h1 className="text-3xl font-bold underline">Education</h1>
 					<div className="text-2xl">
 						<p><span className="underline">College : </span>National Institute of Technology, Karnataka (NITK)</p>

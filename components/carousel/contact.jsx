@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Contact(){
 	return (
-		<div className="bg-yellow-300 w-full h-full flex">
+		<div className="bg-yellow-300 w-full h-full flex md:flex-row flex-col">
 			{/*Connect*/}
 			<div className="flex-1 flex items-center justify-center gap-6">
-				<div className="w-fit h-fit gap-10 grid grid-cols-2 ">				
+				<div className="w-fit h-fit sm:gap-10 gap-6 grid grid-cols-2 ">				
 					<a className="flex items-center justify-center gap-4 px-6 py-4 rounded-full bg-zinc-900 text-white" href="https://www.linkedin.com/in/yash-nirmal-062b68220/" target="_blank">
 						<div className="relative w-10 h-10" >
 							<Image src="/assets/linkedin.png" alt="" fill />

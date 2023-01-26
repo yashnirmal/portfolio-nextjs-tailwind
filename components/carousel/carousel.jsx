@@ -54,12 +54,12 @@ export default function Carousel({slideNum,setCarousel}){
 
 	return (
 		<div className="bg-zinc-900 bg-opacity-95 w-screen h-screen absolute top-0 right-0 m-auto flex flex-col">
-			<div className="w-full h-28 flex justify-center gap-20 relative text-white">
+			<div className="w-full h-28 flex md:justify-center justify-around md:gap-20 sm:gap-10 gap-2 relative text-white">
 		        <button className="cursor-pointer" data-slide="1" onClick={btnClicked} >About</button>
 		        <button className="cursor-pointer" data-slide="2" onClick={btnClicked}>Projects</button>
 		        <button className="cursor-pointer" data-slide="3" onClick={btnClicked}>Skills</button>
 		        <button className="cursor-pointer" data-slide="4" onClick={btnClicked}>Contact</button>
-		    	<button className="absolute top-1/2 right-20 -translate-y-1/2 font-bold text-2xl z-100 hover:bg-red-500 rounded-full py-4 px-6 transition duration-200"  onClick={()=>setCarousel(false)}>X</button>
+		    	<button className="md:absolute md:top-1/2 md:right-20 md:-translate-y-1/2 font-bold md:text-2xl text-xl z-100 hover:bg-red-500 rounded-full py-4 md:px-6 px-0 transition duration-200"  onClick={()=>setCarousel(false)}>X</button>
 		    	{/*<Resume className="h-fit" />*/}
 		    </div>
 
@@ -80,12 +80,12 @@ export default function Carousel({slideNum,setCarousel}){
 			        </div>
 
 			    </div>
-			    <button type="button" className="flex text-white absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev onClick={moveToPrev}>
+			    <button type="button" className="sm:flex hidden text-white absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev onClick={moveToPrev}>
 			        <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-zinc-500 group-hover:bg-white/50 dark:group-hover:bg-zinc-400 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 transition duration-200">
 			            {'<'}
 			        </span>
 			    </button>
-			    <button type="button" className="flex text-white absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next onClick={moveToNext}>
+			    <button type="button" className="sm:flex hidden text-white absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next onClick={moveToNext}>
 			        <span className="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-zinc-500 group-hover:bg-white/50 dark:group-hover:bg-zinc-400 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 transition duration-200">
 			            {'>'}
 			        </span>

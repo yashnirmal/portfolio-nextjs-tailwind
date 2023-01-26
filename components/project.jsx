@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Project({data}){
 	return (
-		<div className="bg-white h-full rounded-2xl overflow-hidden shadow-xl">
+		<div className="bg-white h-fill rounded-2xl overflow-hidden shadow-xl">
 			<div className="aspect-video">
 				<div className="w-full h-full relative group">
 					<Image src={`/assets/projects/${data.image}`} fill /> 

@@ -9,14 +9,16 @@ const data = [
 
 export default function Projects(){
 	return (
-		<div className="bg-purple-400 w-full h-full grid grid-cols-4 gap-y-10 gap-x-14 p-6">
-			{
-				data.map((d)=>(
-					<Project data={d} />
-				))
-			}
-			<div className="bg-white rounded-2xl flex items-center justify-center col-span-4" >
-				<a href="https://github.com/yashnirmal?tab=repositories">See More on Github &#8599;</a>
+		<div className="w-full h-full flex flex-col bg-purple-400">
+			<div className="w-full h-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-10 gap-x-14 p-6">
+				{
+					data.map((d)=>(
+						<Project data={d} />
+					))
+				}
+			</div>
+			<div className="bg-white rounded-2xl flex items-center justify-center col-span-4 mb-6 mx-6" >
+					<a className="p-2" href="https://github.com/yashnirmal?tab=repositories">See More on Github &#8599;</a>
 			</div>
 		</div>
 	)
