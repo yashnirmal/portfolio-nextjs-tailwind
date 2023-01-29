@@ -53,7 +53,7 @@ export default function Carousel({slideNum,setCarousel}){
 	}
 
 	return (
-		<div className="bg-zinc-900 bg-opacity-95 w-screen min-h-screen h-fit absolute top-0 right-0 m-auto flex flex-col">
+		<div className="bg-zinc-900 bg-opacity-95 w-screen h-screen absolute top-0 right-0 m-auto flex flex-col">
 			<div className="w-full h-28 flex md:justify-center justify-around md:gap-20 sm:gap-10 gap-2 relative text-white">
 		        <button className="cursor-pointer" data-slide="1" onClick={btnClicked} >About</button>
 		        <button className="cursor-pointer" data-slide="2" onClick={btnClicked}>Projects</button>
