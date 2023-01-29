@@ -60,7 +60,6 @@ export default function Carousel({slideNum,setCarousel}){
 		        <button className="cursor-pointer" data-slide="3" onClick={btnClicked}>Skills</button>
 		        <button className="cursor-pointer" data-slide="4" onClick={btnClicked}>Contact</button>
 		    	<button className="md:absolute md:top-1/2 md:right-20 md:-translate-y-1/2 font-bold md:text-2xl text-xl z-100 hover:bg-red-500 rounded-full py-4 md:px-6 px-0 transition duration-200"  onClick={()=>setCarousel(false)}>X</button>
-		    	{/*<Resume className="h-fit" />*/}
 		    </div>
 
 			<div id="default-carousel" className="flex-grow relative" data-carousel="static">
