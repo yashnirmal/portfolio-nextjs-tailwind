@@ -18,7 +18,7 @@ export default function Contact(){
 						</div>
 						<p>Github</p>
 					</a>
-					<a className="flex items-center justify-center gap-4 px-6 py-4 rounded-full bg-zinc-900 text-white" href="https://twitter.com/YashNirmal42" target="_blank">
+					<a className="flex items-center justify-center gap-4 px-6 py-4 rounded-full bg-zinc-900 text-white" href="https://twitter.com/YashNirmalDev" target="_blank">
 						<div className="relative w-10 h-10" >
 							<Image src="/assets/twitter.png" alt="" fill />
 						</div>
